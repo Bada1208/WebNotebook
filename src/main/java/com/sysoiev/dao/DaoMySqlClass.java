@@ -17,12 +17,12 @@ public class DaoMySqlClass {
     }
 
     public int save(Contact contact) {
-        String sql = "insert into notebook(id,surname,name,phone_number,age) values('" + contact.getId() + "'," + contact.getSurname() + "'," + contact.getName() + ",'" + contact.getPhoneNumber() + ",'" + contact.getAge() + "')";
+        String sql = "insert into notebook(surname,name,phone_number,age) values('" + contact.getSurname() + "'," + contact.getName() + ",'" + contact.getPhoneNumber() + "'," + contact.getAge() + ")";
         return template.update(sql);
     }
 
     public int update(Contact contact) {
-        String sql = "update notebook set name='" + contact.getName() + "', surname=" + contact.getName() + ",phone_number='" + contact.getPhoneNumber() + ",age='" + contact.getAge() + "' where id=" + contact.getId() + "";
+        String sql = "update notebook set name='" + contact.getName() + "', surname='" + contact.getName() + "',phone_number='" + contact.getPhoneNumber() + "',age='" + contact.getAge() + "' where id='" + contact.getId() + ")'";
         return template.update(sql);
     }
 

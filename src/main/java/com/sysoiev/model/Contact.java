@@ -30,6 +30,7 @@ public class Contact {
     public void setId(int id) {
         this.id = id;
     }
+
     public String getSurname() {
         return surname;
     }
@@ -71,6 +72,5 @@ public class Contact {
                 ", age=" + age +
                 '}';
     }
-
 
 }
