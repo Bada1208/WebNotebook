@@ -2,12 +2,36 @@
   <artifact type="exploded-war" name="WebNotebook:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/WebNotebook_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="WebNotebook/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="WebNotebook" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jasper:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:9.0.12" />
+          <element id="library" level="project" name="Maven: org.eclipse.jdt:ecj:3.13.102" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jasper-el:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-api:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util-scan:9.0.12" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util:9.0.12" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.11" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:2.6.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.1.1.RELEASE" />
+        </element>
       </element>
+      <element id="javaee-facet-resources" facet="WebNotebook/web/Web2" />
+      <element id="javaee-facet-resources" facet="WebNotebook/web/Web" />
     </root>
   </artifact>
 </component>

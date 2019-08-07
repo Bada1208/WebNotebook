@@ -9,5 +9,8 @@
         <module name="WebNotebook" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="WebNotebook" target="6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

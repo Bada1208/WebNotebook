@@ -17,7 +17,7 @@ public class DaoMySqlClass {
     }
 
     public int save(Contact contact) {
-        String sql = "insert into notebook(surname,name,phone_number,age) values('" + contact.getSurname() + "'," + contact.getName() + ",'" + contact.getPhoneNumber() + "'," + contact.getAge() + ")";
+        String sql = "insert into notebook(surname,name,phone_number,age) values('" + contact.getSurname() + "','" + contact.getName() + "','" + contact.getPhoneNumber() + "'," + contact.getAge() + ")";
         return template.update(sql);
     }
 
