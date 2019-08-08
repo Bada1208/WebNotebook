@@ -33,10 +33,10 @@ public class ContactController {
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String save(@ModelAttribute("contact") Contact contact) {
         dao.save(contact);
-        return "redirect:/viewcontact";//will redirect to viewemp request mapping
+        return "redirect:/viewcontact";//will redirect to viewcontact request mapping
     }
 
-    /* It provides list of employees in model object */
+    /* It provides list of contacts in model object */
     @RequestMapping("/viewcontact")
     public String viewcontact(Model m) {
         List<Contact> list = dao.getContacts();
