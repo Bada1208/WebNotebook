@@ -55,7 +55,7 @@ public class ContactController {
 
     /* It updates model object. */
     @RequestMapping(value = "/editsave", method = RequestMethod.POST)
-    public String editsave(@ModelAttribute("contact") Contact contact) {
+    public String editsave(@ModelAttribute("contactform") Contact contact) {//contact
         dao.update(contact);
         return "redirect:/viewcontact";
     }

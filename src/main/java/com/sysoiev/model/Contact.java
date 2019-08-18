@@ -14,7 +14,7 @@ public class Contact {
 
     public Contact(int id, String surname, String name, String phoneNumber, int age) {
         if (id > 0 && surname != null && !surname.isEmpty() && name != null && !name.isEmpty() && phoneNumber != null
-                && !phoneNumber.isEmpty() && age > 0) {
+                && !phoneNumber.isEmpty() && age > 0 && age < 100) {
             this.id = id;
             this.surname = surname;
             this.name = name;
